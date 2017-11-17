@@ -1,6 +1,6 @@
 Scripts for variant calling, annotation and VCF manipulation.
 
-## 7.0.VarScan_SNPcalling.sh -
+## 6.0.VarScan_SNPcalling.sh -
 Automated SNP calling for multiple sequencing projects using VarScan 1 sample per strain (indel + SNP together)
 (Optimized version for compression of resulting files)
 
@@ -9,7 +9,7 @@ Automated SNP calling for multiple sequencing projects using VarScan 1 sample pe
 * bgzip
 * GATK (v3.5)
 
-Usage: ```7.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
+Usage: ```6.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
 
 WARNING:
 The reference genome is assumed to have been indexed previously and located in ./00.IndexReferenceGenome
@@ -21,13 +21,13 @@ ConfigFile example:
 <path to root for strain N> 
 ```
 
-## 7.1.runSnpEffect.sh - 
+## 6.1.runSnpEffect.sh - 
 Runs snpEffect for a batch of strains of M. bovis.
 
 ##### It uses: 
 * snpEffect (version 4.2 (build 2015-12-05))
 
-Usage: ```bash <7.1.runSnpEffect.sh> <1:configFile.conf> <snpEff location> <snpEff.config location>```
+Usage: ```bash <6.1.runSnpEffect.sh> <1:configFile.conf> <snpEff location> <snpEff.config location>```
 
 WARNING: 
 * Use absolute paths 
@@ -42,10 +42,10 @@ ConfigFile example:
 <path_to_folderN>
 ```
 
-## 7.2.mergeMultipleVCF_CombineVariants.sh - 
+## 6.2.mergeMultipleVCF_CombineVariants.sh - 
 Merge vcfs from multiple independent files into one with many samples from ALL the vcfs in the directory (Careful)
 
-Usage: ```bash 7.2.mergeMultipleVCF_CombineVariants.sh <outputFile.vcf> <GATK location> <pathToReference>```
+Usage: ```bash 6.2.mergeMultipleVCF_CombineVariants.sh <outputFile.vcf> <GATK location> <pathToReference>```
 
 * outputFile.vcf - Name desired for the output file  
 
