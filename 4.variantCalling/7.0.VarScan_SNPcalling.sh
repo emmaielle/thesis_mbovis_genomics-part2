@@ -16,7 +16,7 @@ It uses:
 - bgzip
 - GATK (v3.5)
 
-Usage: VarScan_SNPcalling_OPTIMIZE.SIZES.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>
+Usage: 7.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>
 
 PRECONDITION:
 The reference genome is assumed to have been indexed previously and located in ./00.IndexReferenceGenome

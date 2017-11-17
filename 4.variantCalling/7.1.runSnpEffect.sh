@@ -26,6 +26,18 @@ configFile example:
 "
 
 else
+if [ -z $2 ]
+then
+
+echo "You need to provide the path where snpEff is located as a 2nd argument"
+
+else
+if [ -z $3 ]
+then
+
+echo "You need to provide the path where the snpEff.config file is located as a 3rd argument"
+
+else
 
 current=$(pwd)
 
