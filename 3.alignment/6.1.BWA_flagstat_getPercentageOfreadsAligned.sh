@@ -20,9 +20,9 @@ Example output:
 It uses: 
 - Samtools, version 0.1.18 (r982:295)
 
-Usage: bash <06.1.BWA_flagstat_getPercentageOfreadsAligned.sh> <config file>
+Usage: bash <6.1.BWA_flagstat_getPercentageOfreadsAligned.sh> <config file>
 
-Example: bash 06.1.BWA_flagstat_getPercentageOfreadsAligned.sh conf.folders
+Example: bash 6.1.BWA_flagstat_getPercentageOfreadsAligned.sh conf.folders
 
 Config example:
 <pathtofolder1>
@@ -38,7 +38,7 @@ echo "You must provide at least one folder"
 else
 
 current=$(pwd)
-dat=$(formDate)
+dat=$(date +%d%b%Y_%H.%M)
 config=$(pwd)/conf.OutputFromAlignment.$dat
 touch $config
 

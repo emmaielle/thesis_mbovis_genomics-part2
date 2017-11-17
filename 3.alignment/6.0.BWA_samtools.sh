@@ -6,9 +6,7 @@ if [ -z "$1" ]
 then
  
 echo "
-Automated BWA alignment & samtools conversion.
-(filtering out human contaminated reads)
-
+Automated BWA alignment & samtools conversion, filtering out potential human contaminated reads.
 (Optimized version to handle size limits)
 
 --------------- HELP ------------------
@@ -16,13 +14,13 @@ It uses:
 - BWA (bwa aln -l 15 -k 3 && bwa sampe). For BWA, version 0.7.12-r1039
 - Samtools, version 0.1.18 (r982:295)
 
-Usage: bash <pathtoBWA_samtools.sh> <1:configFile.conf> <2:pathtoReferenciaMapIn/true> <3:pathtoReferenciaMapOutINDEX>
+Usage: bash <pathtoBWA_samtools.sh> <1:configFile.conf> <2:pathtoReferenceToMapIn> <3:pathtoReferenceToMapOut_INDEX>
 
-2 - the second parameter should be the path for the reference genome file if the genome hasn't been indexed, OR
-the FOLDER for the previously indexed genome, to save from the process of indexing again. NOTE: for M bovis,
-this is in Tb73 strain, so the only option for you to have an index is if  it's in Tb73
+2 - The second parameter should be the path for the reference genome file if the genome hasn't been indexed, OR
+the FOLDER for the previously indexed genome, to save from the process of indexing again. 
+NOTE: for M bovis, this is in Tb73 strain, so the only option for you to have an index is if it's in Tb73
 
-3 - parameter 3 is a directory too, not the actual index file
+3 - Parameter 3 is a directory too, not the actual index file
 
 WARNING: 
 -Complete paths please
