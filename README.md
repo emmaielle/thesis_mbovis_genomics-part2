@@ -87,7 +87,7 @@ Output:
 - rejected.genomes.txt
 
 
-## 6.0.BWA_samtools.sh -
+## 5.0.BWA_samtools.sh -
 Automated BWA alignment & samtools conversion, filtering out potential human contaminated reads (Optimized version to handle size limits)
 
 ##### It uses: 
@@ -111,13 +111,13 @@ configFile example:
 <path_to_folderN>
 ```
 
-## 6.1.BWA_flagstat_getPercentageOfreadsAligned.sh -
+## 5.1.BWA_flagstat_getPercentageOfreadsAligned.sh -
 Flagstat and percentage of alignment. Outputs a config.file composed of all of the input strains followed by their alignment status downstream analyses. This is calculated by determining the percentage of alignment against a reference: If it mapped more than 80% of the reads, then the config file will suggest to use all of the original reads. On the contrary, if the mapping covers less than 80% of all the reads, the output config file will indicate to use only the mapped reads for this strain, in order to avoid contamination during the sequencing.
 
 ##### It uses: 
 * Samtools, version 0.1.18 (r982:295)
 
-Usage: ```bash <6.1.BWA_flagstat_getPercentageOfreadsAligned.sh> <config file>```
+Usage: ```bash <5.1.BWA_flagstat_getPercentageOfreadsAligned.sh> <config file>```
   
 Config example:
 ```
@@ -134,13 +134,13 @@ Example output:
 <pathtostrainN> <ALL/MAPPED>
 ```
 
-## 6.2.BWA_flagstat_getPercentageOfHUMANreadsAligned.sh -
+## 5.2.BWA_flagstat_getPercentageOfHUMANreadsAligned.sh -
 Flagstat and percentage of alignment against human reference genome. Similar to script 6.1.
 
 ##### It uses: 
 - Samtools, version 0.1.18 (r982:295)
 
-Usage: ```bash <6.2.BWA_flagstat_getPercentageOfHUMANreadsAligned.sh> <configfile>```
+Usage: ```bash <5.2.BWA_flagstat_getPercentageOfHUMANreadsAligned.sh> <configfile>```
 
 Config example:
 ```
@@ -150,13 +150,13 @@ Config example:
 <pathtofolderN>
 ```
 
-## 6.3.countReadsFromBAM.sh -
+## 5.3.countReadsFromBAM.sh -
 Count reads from any bam file. Works for batches
 
 ##### It uses:
 * Samtools
 
-Usage: ```6.3.countReadsFromBAM.sh <config.file>``` 
+Usage: ```5.3.countReadsFromBAM.sh <config.file>``` 
 
 NOTE:
 * Assumes a file structure formed by following the previous steps/scripts. In this case, this script will look for a "2.samtoolsFilter" folder inside the given path.
@@ -168,13 +168,13 @@ ConfigFile example:
 <pathTostrainFolderN>
 ```
 
-## 6.4.getCoverage_fromBam.sh - 
+## 5.4.getCoverage_fromBam.sh - 
 Calculates the coverage of a standard bam file from a batch of strains for M. bovis.
 
 ##### It uses:
 - Samtools
 
-Usage: 6.4.getCoverage_fromBam.sh <config.file> <bam.prefix>
+Usage: 5.4.getCoverage_fromBam.sh <config.file> <bam.prefix>
 
 Tips:
 * bam.prefix - the prefix refers to the keyword of the bam file that precedes the name of each strain. It's required as to avoid confusion when more than one bam file is present in the same folder.
@@ -187,7 +187,7 @@ ConfigFile example:
 <path to root for strain N>
 ```
 
-## 7.0.VarScan_SNPcalling.sh -
+## 6.0.VarScan_SNPcalling.sh -
 Automated SNP calling for multiple sequencing projects using VarScan 1 sample per strain (indel + SNP together)
 (Optimized version for compression of resulting files)
 
@@ -196,7 +196,7 @@ Automated SNP calling for multiple sequencing projects using VarScan 1 sample pe
 * bgzip
 * GATK (v3.5)
 
-Usage: ```7.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
+Usage: ```6.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
 
 WARNING:
 The reference genome is assumed to have been indexed previously and located in ./00.IndexReferenceGenome
@@ -208,13 +208,13 @@ ConfigFile example:
 <path to root for strain N> 
 ```
 
-## 7.1.runSnpEffect.sh - 
+## 6.1.runSnpEffect.sh - 
 Runs snpEffect for a batch of strains of M. bovis.
 
 ##### It uses: 
 * snpEffect (version 4.2 (build 2015-12-05))
 
-Usage: ```bash <7.1.runSnpEffect.sh> <1:configFile.conf> <snpEff location> <snpEff.config location>```
+Usage: ```bash <6.1.runSnpEffect.sh> <1:configFile.conf> <snpEff location> <snpEff.config location>```
 
 WARNING: 
 * Use complete paths 
@@ -229,10 +229,10 @@ ConfigFile example:
 <path_to_folderN>
 ```
 
-## 7.2.mergeMultipleVCF_CombineVariants.sh - 
+## 6.2.mergeMultipleVCF_CombineVariants.sh - 
 Merge vcfs from multiple independent files into one with many samples from ALL the vcfs in the directory (Careful)
 
-Usage: ```bash 7.2.mergeMultipleVCF_CombineVariants.sh <outputFile.vcf> <GATK location> <pathToReference>```
+Usage: ```bash 6.2.mergeMultipleVCF_CombineVariants.sh <outputFile.vcf> <GATK location> <pathToReference>```
 
 * outputFile.vcf - Name desired for the output file  
 
