@@ -30,7 +30,7 @@ Runs snpEffect for a batch of strains of M. bovis.
 Usage: ```bash <7.1.runSnpEffect.sh> <1:configFile.conf> <snpEff location> <snpEff.config location>```
 
 WARNING: 
-* Use complete paths 
+* Use absolute paths 
 * snpEff.config local is located in ~/Software/snpEff/snpEff.config. For external use, you need to set up snpEff.
 * Assumes a file structure formed by following the previous steps/scripts. In this case, this script will look for a "5.SNPcalling/5.1.VarScan" folder inside the given path.
 
