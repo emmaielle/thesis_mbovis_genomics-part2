@@ -1,3 +1,5 @@
+# Scripts for downloading all the sra files and locating them in their corresponding folders for downstream analysis 
+
 ## 1.createBatchFolders.sh -
 Create multiple folders from a config file specifying their names and copies files with the same name to their respective folders. 
 It will move or copy the files, according to what the user specifies, so they must be removed from the original path if desired.
