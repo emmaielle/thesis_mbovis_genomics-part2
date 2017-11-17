@@ -67,7 +67,7 @@ Output example:
 ```
 
 ## 4.trimANDfilterReads_orFullGenomes.sh
-Trims and filters reads with overall quality score below <qs> and, from the remaining reads, calculates the coverage. If it is lower than <cov>, it rejects the whole sequencing project. It works for all the selected folders inside the current directory.
+Trims and filters reads with overall quality score below ```qs``` and, from the remaining reads, calculates the coverage. If it is lower than ```cov```, it rejects the whole sequencing project. It works for all the selected folders inside the current directory.
 
 ##### It uses:
 - NGSQCToolkit (v2.3.3)
