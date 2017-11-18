@@ -8,21 +8,16 @@ positional arguments:
 * groups - input file with information on which group each sample belongs to.
            The format of the file is the following:
 
->\>group1
-
->sample1
-
->sample23
-
->sample589
-
->...
-
->\>groupN
-
->sample234
-
->sample988
+```
+>group1
+sample1
+sample23
+sample589
+...
+>groupN
+sample234
+sample988
+```
 
 Example: 
 >  python ./filterSNPs.py 1220W_URY_OUT.snpEffect.vcf groups.txt
