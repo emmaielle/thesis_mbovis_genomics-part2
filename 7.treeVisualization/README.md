@@ -37,7 +37,7 @@ Output:
 > {"uno": "#FFC81D", "dos": "#3A7BB4"}
 
 ## numberedPrefix_toColor.py - 
-Given a prefix and an int, appends the prefix to the int from 0 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space
+Given a prefix and an int, appends the prefix to the int from 1 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space
 
 usage: ```python ./numberedPrefix_toColor.py [-h] m p```
 
