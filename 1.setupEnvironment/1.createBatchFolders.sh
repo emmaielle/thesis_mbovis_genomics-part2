@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: Create multiple folders from a config file specifying their names and copies files with the same name to their respective folders.
 
 if [ -z "$1" ]

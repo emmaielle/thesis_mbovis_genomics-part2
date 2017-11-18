@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: automated BWA alignment for paired end reads & samtools coversion to bam
 
 if [ -z "$1" ]

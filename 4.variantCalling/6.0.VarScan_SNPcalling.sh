@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: automatically run batch files for SNP calling with GATK and VarScan
 
 if [ -z "$1" ]
@@ -149,5 +149,7 @@ fi
 
 fi
 
+fi
 
+fi
 

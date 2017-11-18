@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: apply command fastq-dump --split-3 for a batch of files within folders
 
 if [ -z "$1" ]

@@ -8,7 +8,6 @@ Automated SpoTyping run for multiple strains of *M. bovis*
 
 Usage: ```bash 7.0.runSpotyping_batch.sh <config.file> ```
 
----------------------------------------------------------------------
 configFile example:
 ```
 <path to reads for strain 1>
@@ -24,7 +23,6 @@ Conversion of known spoligotype patterns to SB numbers
 
 Usage: ```7.1.spolPattern_to_SB.sh <input.file>```
 
----------------------------------------------------------------------
 input.file example:
 ```
 <spoligotype binary pattern 1>

@@ -1,4 +1,4 @@
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: automatically create config files that havethe entire path and a selected keyword
 
 if [ -z "$1" ]

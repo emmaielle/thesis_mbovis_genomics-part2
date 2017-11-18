@@ -1,4 +1,4 @@
-## mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 
 if [ -z "$1" ]
 then
@@ -47,5 +47,9 @@ java -jar $2 -R $3 -T CombineVariants $vars -o $1 -genotypeMergeOptions UNIQUIFY
 
 cd $current
 
+
+fi
+
+fi
 
 fi

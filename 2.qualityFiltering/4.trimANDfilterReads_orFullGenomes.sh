@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: Trims and filters reads with overall quality score < 20 and from the remaining reads, calculates the
 # coverage. If it is lower than 30x, it rejects the whole sequencing project.
 

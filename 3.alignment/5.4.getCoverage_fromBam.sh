@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: calculates the coverage of a standard bam file in a batch of strains for M. bovis
 
 if [ -z "$1" ]

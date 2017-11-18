@@ -66,6 +66,8 @@ Output example:
 <path_to_folderN> <keyword>
 ```
 
+---------------------------------------------------------------------
+
 ## 4.trimANDfilterReads_orFullGenomes.sh
 Trims and filters reads with overall quality score below ```qs``` and, from the remaining reads, calculates the coverage. If it is lower than ```cov```, it rejects the whole sequencing project. It works for all the selected folders inside the current directory.
 
@@ -86,6 +88,8 @@ Output:
 - accepted.genomes.txt
 - rejected.genomes.txt
 
+
+---------------------------------------------------------------------
 
 ## 5.0.BWA_samtools.sh -
 Automated BWA alignment & samtools conversion, filtering out potential human contaminated reads (Optimized version to handle size limits)
@@ -187,6 +191,8 @@ ConfigFile example:
 <path to root for strain N>
 ```
 
+---------------------------------------------------------------------
+
 ## 6.0.VarScan_SNPcalling.sh -
 Automated SNP calling for multiple sequencing projects using VarScan 1 sample per strain (indel + SNP together)
 (Optimized version for compression of resulting files)
@@ -236,4 +242,6 @@ Usage: ```bash 6.2.mergeMultipleVCF_CombineVariants.sh <outputFile.vcf> <GATK lo
 
 * outputFile.vcf - Name desired for the output file  
 
+
+---------------------------------------------------------------------
 

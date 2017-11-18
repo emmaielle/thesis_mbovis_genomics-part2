@@ -1,5 +1,5 @@
 #!/bin/bash
-# mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: run SNPeffect for batch strains
 
 if [ -z "$1" ]
@@ -76,7 +76,9 @@ cd $current
 
 fi
 
+fi
 
+fi
 
 
 

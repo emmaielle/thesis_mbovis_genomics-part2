@@ -1,4 +1,4 @@
-#mlasserre@pasteur.edu.uy
+# mlasserre[at]pasteur[dot]edu[dot]uy
 # help: Count reads from any bam file. Works for batches
 
 if [ -z "$1" ]
