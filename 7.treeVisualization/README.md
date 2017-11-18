@@ -23,6 +23,30 @@ Simplified version for the attainment of a rectangular, pruned tree. Hardcoded a
 
 
 ## parseString.py - 
+Parse string to output a dictionary of random colours that adjust to plotTree.py colour format. Separator: space.
 
+Usage: ```parseString.py [-h] str```
+
+positional arguments:
+  * str - String space-separated
+
+Example:
+```python ./parseString.py "uno dos"```
+
+Output:
+> {"uno": "#FFC81D", "dos": "#3A7BB4"}
 
 ## numberedPrefix_toColor.py - 
+Given a prefix and an int, appends the prefix to the int from 0 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space
+
+usage: ```python ./numberedPrefix_toColor.py [-h] m p```
+
+positional arguments:
+  * m - Max num of items
+  * p - Desired prefix
+
+Example:
+> python ./numberedPrefix_toColor.py 8 prefix
+
+Output:
+> {"prefix 1": "MediumTurquoise", "prefix 2": "OliveDrab", "prefix 3": "Teal", "prefix 4": "#E41A1C", "prefix 5": "#3A85A8", "prefix 6": "#FFDD25", "prefix 7": "Violet", "prefix 8": "MediumTurquoise"}

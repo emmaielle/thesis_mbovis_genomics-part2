@@ -4,9 +4,9 @@ from operator import itemgetter
 from argparse import RawTextHelpFormatter
 from random import randint
 
-parser = argparse.ArgumentParser(description="Parse strings to create Lineage colouring to plotTree.py colour format. Separator: space")
-parser.add_argument(dest="max", type=int, nargs=1, metavar="m", help="Max num of lineages")
-parser.add_argument(dest="prefix", type=str, nargs=1, metavar="p", help="Prefix for lineages")
+parser = argparse.ArgumentParser(description="Given a prefix and an int, appends the prefix to the int from 0 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space")
+parser.add_argument(dest="max", type=int, nargs=1, metavar="m", help="Max num of items")
+parser.add_argument(dest="prefix", type=str, nargs=1, metavar="p", help="Desired prefix")
 
 def setup():
     if len(sys.argv)== 1:
