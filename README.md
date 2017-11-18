@@ -1,4 +1,8 @@
 # thesis_mbovis_genomics-part2
+<p align="left">
+    <img alt="Last update" src="https://img.shields.io/badge/updated-november--17-green.svg?style=flat-square">
+</p>
+
 :octocat: Scripts developed for the elaboration of the second chapter of my M.S. thesis: "Genómica comparativa de Mycobacterium bovis: aproximaciones epidemiológicas y filogenéticas"
 
 Scripts are presented in suggested order of utilization.
