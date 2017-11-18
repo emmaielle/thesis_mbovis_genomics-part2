@@ -7,18 +7,11 @@
 # Dependencies:
 #	 ete2, pyqt4
 #
-# Todo:
-# - convert data file to txt so it is the same as the matrix (which we can't change)
-# - figure out how to add legends(!)
-# - why are circles not circles, ie stretched, etc?
-#
-# Example command on merri:
+# Example command:
 '''
 module load python-gcc/2.7.5
 python /vlsci/VR0082/shared/code/holtlab/plotTree.py --tree tree.nwk --info info.csv --outpdf outfile.pdf
 '''
-#
-# Last modified - Oct 20, 2013
 
 from argparse import (ArgumentParser, FileType)
 import os, sys, re, collections, operator, math
