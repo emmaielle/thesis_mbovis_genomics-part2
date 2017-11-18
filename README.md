@@ -284,7 +284,7 @@ Run coverage analysis for a batch of files and find Regions of Difference
 * parseRD.py
 * bedtools genomecov v2.17.0
 
-Usage: bash ```<14.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
+Usage: bash ```<8.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
 
 WARNING: 
 * Config with absolute paths
