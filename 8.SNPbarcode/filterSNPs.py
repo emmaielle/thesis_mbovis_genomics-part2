@@ -1,6 +1,4 @@
 """
-Created on Mon Jun 20 15:34:12 2016
-
 @author: mlasserre
 """
 
@@ -136,7 +134,7 @@ def parseVCF():
     findSNPsByGroups()
     filterBySNPFeatures(finalArray, "characteristic.")
     filterBySNPFeatures(dictSnpExclusivosDeGrupoNomGrupo, "exclusive.")
-    filterBySNPFeatures(dFinalSnp3Grupos, "2grupos.")
+    filterBySNPFeatures(dFinalSnp3Grupos, "3grupos.")
     write_Out()
 
 
