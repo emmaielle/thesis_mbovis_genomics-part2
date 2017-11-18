@@ -8,7 +8,7 @@ positional arguments:
 * groups - input file with information on which group each sample belongs to.
            The format of the file is the following:
 
-\>group1
+>\>group1
 sample1
 sample23
 sample589
