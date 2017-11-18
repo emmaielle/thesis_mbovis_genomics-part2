@@ -1,4 +1,4 @@
-plotTree.py and plotTree_backbone.py have been forked and modifyed from @katholt repository (https://github.com/katholt/plotTree)
+plotTree.py and plotTree_backbone.py have been forked and modified from @katholt repository (https://github.com/katholt/plotTree)
 For more information on usage, visit their repo and website (https://holtlab.net/2016/10/12/global-picture-typhoid/). 
 
 Dependencies: ete2 (ETE Toolkit 2), pyqt4
@@ -39,7 +39,7 @@ Output:
 > {"uno": "#FFC81D", "dos": "#3A7BB4"}
 
 ## numberedPrefix_toColor.py - 
-Given a prefix and an int, appends the prefix to the int from 0 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space
+Given a prefix and an int, appends the prefix to the int from 1 to int and assigns each a random colour, to output a dictionary that adjust to plotTree.py format. Separator: space
 
 usage: ```python ./numberedPrefix_toColor.py [-h] m p```
 
