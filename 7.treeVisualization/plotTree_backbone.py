@@ -7,18 +7,7 @@
 # Dependencies:
 #	 ete2, pyqt4
 #
-# Todo:
-# - convert data file to txt so it is the same as the matrix (which we can't change)
-# - figure out how to add legends(!)
-# - why are circles not circles, ie stretched, etc?
-#
-# Example command on merri:
-'''
-module load python-gcc/2.7.5
-python /vlsci/VR0082/shared/code/holtlab/plotTree.py --tree tree.nwk --info info.csv --outpdf outfile.pdf
-'''
-#
-# Last modified - Oct 20, 2013
+
 
 from argparse import (ArgumentParser, FileType)
 import os, sys, re, collections, operator, math
@@ -385,72 +374,6 @@ def main():
 		node.img_style["hz_line_width"] = args.branch_thickness
 		node.img_style["vt_line_width"] = args.branch_thickness
 
-	
-		
-########### COMENTADO PARA VER COMO QUEDA CON EL BARCODE. PORQUE ESE NO TIENE TODOS LOS NODOS
-
-	# rotate specific nodes
-	# matches = search_by_size(tree, 463)
-	# print("matches")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 601)
-	# print("matches")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(node, 7)
-	# print("matches")
-	# node = matches[1]
-	# node.swap_children()
-
-	# matches = search_by_size(node, 5)
-	# print("matches 5")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 8)
-	# print("matches 8")
-	# node = matches[5]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 349)
-	# print("matches 349")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 192)
-	# print("matches 192")
-	# node = matches[1]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 182)
-	# print("matches 182")
-	# node = matches[0]
-	# node.swap_children()
-	
-	# matches = search_by_size(tree, 180)
-	# print("matches 180")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 175)
-	# print("matches 175")
-	# node = matches[0]
-	# node.swap_children()
-
-	# matches = search_by_size(tree, 34)
-	# print("matches 34")
-	# node = matches[0]
-	# node.swap_children()
-
-	#### FIN ####
-	
-	#for n in matches:
-	#	print n
-
-	# set tree style
 	ts = TreeStyle()
 	
 	ts.draw_guiding_lines = True
@@ -499,6 +422,7 @@ def main():
 	
 	tree.prune(["SRR1791703", "SRR1792146", "SRR1792164", "Tb74.mbURU-003", "SRR1792375", "SRR1792385", "SRR1792355", "SRR1791775", "SRR1792071", "SRR1792327", "SRR1792034", "SRR1792315", "SRR1791796", "SRR5216757", "SRR5216931", "SRR5216953", "SRR5216849", "SRR5216820", "SRR1792275", "SRR1792310", "SRR1792438", "Tb87.mbURU-007", "SRR5216936", "SRR1791928", "SRR1792279", "SRR1791770", "SRR1791946", "SRR1791841", "SRR1792108", "ERR1815547", "SRR1791876", "SRR1792213", "SRR1792478", "SRR1792002", "SRR1791826", "SRR1792479", "SRR1792485", "SRR5216724", "SRR1657068", "SRR5216736", "SRR5216692", "ERR841820", "ERR125611", "SRR1791982", "ERR841846", "SRR1791965", "SRR1792356", "SRR1791779", "SRR1791805"])
 	
+	#Node rotation harcoded
 	matches = search_by_size(tree, 48)
 	print("matches")
 

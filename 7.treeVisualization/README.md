@@ -21,8 +21,10 @@ For the automatic (and random) assertion of colours to attributes from the metad
 ## plotTree_backbone.py - 
 Simplified version for the attainment of a rectangular, pruned tree. Hardcoded at it's best to fit my own data. Therefore, for flexibility, you should use plotTree.py
 
+Example:
+> xvfb-run python ../plotTree_backbone.py --tree RAxML_bipartitions.BestTree.sindeAntes.uniq --info genotipos3.csv --output backbone.png --width 200 --font_size 16 --branch_thickness 3 --line_width 2 --show_leaf_names --no_guiding_lines --colour_backgrounds_by Cluster3_10_2 --colour_dict '{"NA":"White", "Lineage2 5": "#946DA3", "Lineage2 4": "#540D6E","Lineage2 7": "#6F5196", "Lineage2 6": "#8D80AD", "Lineage2 1": "#d7191c",  "Lineage2 3": "#F49CBB", "Lineage2 2": "#EE4266", "Lineage2 9": "#6D9DC5", "Lineage2 8":"#53599A", "Lineage2 11": "#46ACC2", "Lineage2 10": "#496DDB", "Lineage2 13": "#679436", "Lineage2 12": "#5FAD41", "Lineage2 15": "#aecf8e", "Lineage2 14": "#8ecf8f", "Lineage2 17": "#E2EB98", "Lineage2 16": "#95BF74", "Lineage2 19": "#EE964B", "Lineage2 18": "#FFD23F", "Lineage 4": "#046614", "Lineage 5": "#877c02", "Lineage 2": "#490163", "Lineage 3": "#1c0496", "Lineage 1": "#960303", "NA":"White"}' --colour_branches_by Cluster3_10_1 --length_scale 7500 --tags --outgroup SRR1792164 --delete_branches SRR1792164
 
-## parseString.py - 
+## parseString_toColor.py - 
 Parse string to output a dictionary of random colours that adjust to plotTree.py colour format. Separator: space.
 
 Usage: ```parseString.py [-h] str```
