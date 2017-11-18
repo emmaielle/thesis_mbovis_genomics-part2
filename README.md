@@ -311,7 +311,5 @@ Outputs:
 Usage: ```python 8.1.parseRD_forUniqIDs.py [-h] i l```
 
 Positional arguments:
-  i           config file with the path locations of each RD.out files to analyze
-  l           Length of the smallest desired RD (default 75)
-
-
+  * i\t-\t           config file with the path locations of each RD.out files to analyze
+  * l\t-\t           Length of the smallest desired RD (default 75)
