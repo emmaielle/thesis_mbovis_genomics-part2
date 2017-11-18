@@ -9,12 +9,19 @@ positional arguments:
            The format of the file is the following:
 
 >\>group1
+
 >sample1
+
 >sample23
+
 >sample589
+
 >...
+
 >\>groupN
+
 >sample234
+
 >sample988
 
 Example: 
