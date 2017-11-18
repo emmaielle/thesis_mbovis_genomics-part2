@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 20 15:34:12 2016
 @author: mlasserre
 """
 ## Version: 2.0

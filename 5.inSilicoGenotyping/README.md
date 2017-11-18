@@ -21,7 +21,7 @@ Conversion of known spoligotype patterns to SB numbers
 ##### It uses:
 - mbovis info (SpoligotypePatterns.txt, located in current directory)
 
-Usage: ```7.1.spolPattern_to_SB.sh <input.file>```
+Usage: ```bash 7.1.spolPattern_to_SB.sh <input.file>```
 
 input.file example:
 ```
@@ -30,14 +30,14 @@ input.file example:
 <spoligotype binary pattern N>
 ```
 
-## 8.RD_discovery.sh -
+## 8.0.RD_discovery.sh -
 Run coverage analysis for a batch of files and find Regions of Difference
 
 ##### It uses: 
 * parseRD.py
 * bedtools genomecov v2.17.0
 
-Usage: bash ```<8.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
+Usage: ```bash <8.0.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
 
 WARNING: 
 * Config with absolute paths

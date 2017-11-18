@@ -9,7 +9,7 @@ It will move or copy the files, according to what the user specifies, so they mu
 If no 2nd argument is provided, then the script won't work.
 
 Usage: 
-``` <createBatchFolders.sh> configFile pathToCreateThem mv/cp```
+```bash <createBatchFolders.sh> configFile pathToCreateThem mv/cp```
 
 ### Tips:
 * pathToCreateThem: Absolute paths are recommended 
@@ -32,7 +32,7 @@ Apply command ```fastq-dump --split-3``` for a batch of .sra files within folder
 * fastq-dump (from **SRAtoolkit** version 2.5.2)
 * tar
 
-Usage: ```fastqDump4Batches.sh configFile``` 
+Usage: ```bash fastqDump4Batches.sh configFile``` 
 
 ### Tips:
 * paired/single - 'paired' for paired end library, 'single' for single end library
@@ -49,7 +49,7 @@ Config file example:
 ## 3.createConfigFile.sh -
 Automatically create config files that have the entire path of the folders in the current directory and a selected keyword next to each.
 
-Usage: ```3.createConfigFile.sh confName -k keyword [folder1 [folder2]...] ```
+Usage: ```bash 3.createConfigFile.sh confName -k keyword [folder1 [folder2]...] ```
 
 ### Tips:
 * confName - a key name to identify the config file along with the current date, eg.: conf.batches.Dec2015
@@ -160,7 +160,7 @@ Count reads from any bam file. Works for batches
 ##### It uses:
 * Samtools
 
-Usage: ```5.3.countReadsFromBAM.sh <config.file>``` 
+Usage: ```bash 5.3.countReadsFromBAM.sh <config.file>``` 
 
 NOTE:
 * Assumes a file structure formed by following the previous steps/scripts. In this case, this script will look for a "2.samtoolsFilter" folder inside the given path.
@@ -178,7 +178,7 @@ Calculates the coverage of a standard bam file from a batch of strains for M. bo
 ##### It uses:
 - Samtools
 
-Usage: 5.4.getCoverage_fromBam.sh <config.file> <bam.prefix>
+Usage: ```bash 5.4.getCoverage_fromBam.sh <config.file> <bam.prefix>```
 
 Tips:
 * bam.prefix - the prefix refers to the keyword of the bam file that precedes the name of each strain. It's required as to avoid confusion when more than one bam file is present in the same folder.
@@ -202,7 +202,7 @@ Automated SNP calling for multiple sequencing projects using VarScan 1 sample pe
 * bgzip
 * GATK (v3.5)
 
-Usage: ```6.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
+Usage: ```bash 6.0.VarScan_SNPcalling.sh <config.file> <pathToReferenceGenome> <varScan location> <GATK location>```
 
 WARNING:
 The reference genome is assumed to have been indexed previously and located in ./00.IndexReferenceGenome
@@ -268,7 +268,7 @@ Conversion of known spoligotype patterns to SB numbers
 ##### It uses:
 - mbovis info (SpoligotypePatterns.txt, located in current directory)
 
-Usage: ```7.1.spolPattern_to_SB.sh <input.file>```
+Usage: ```bash 7.1.spolPattern_to_SB.sh <input.file>```
 
 input.file example:
 ```
@@ -277,14 +277,14 @@ input.file example:
 <spoligotype binary pattern N>
 ```
 
-## 8.RD_discovery.sh -
+## 8.0.RD_discovery.sh -
 Run coverage analysis for a batch of files and find Regions of Difference
 
 ##### It uses: 
 * parseRD.py
 * bedtools genomecov v2.17.0
 
-Usage: bash ```<8.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
+Usage: ``` bash <8.0.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
 
 WARNING: 
 * Config with absolute paths
