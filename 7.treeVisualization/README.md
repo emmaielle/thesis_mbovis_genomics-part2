@@ -1,4 +1,4 @@
-plotTree.py and plotTree_backbone.py have been forked and modifyed from @katholt repository (https://github.com/katholt/plotTree)
+plotTree.py and plotTree_backbone.py have been forked and modified from @katholt repository (https://github.com/katholt/plotTree)
 For more information on usage, visit their repo and website (https://holtlab.net/2016/10/12/global-picture-typhoid/). 
 
 Dependencies: ete2 (ETE Toolkit 2), pyqt4
