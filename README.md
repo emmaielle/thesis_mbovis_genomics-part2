@@ -284,7 +284,7 @@ Run coverage analysis for a batch of files and find Regions of Difference
 * parseRD.py
 * bedtools genomecov v2.17.0
 
-Usage: ``` bash <8.0.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
+Usage: ```bash <8.0.RD_discovery.sh> <1:configFile.conf> <referencegenome.fasta>```
 
 WARNING: 
 * Config with absolute paths
@@ -313,3 +313,5 @@ Usage: ```python 8.1.parseRD_forUniqIDs.py [-h] i l```
 Positional arguments:
   * i - config file with the path locations of each RD.out files to analyze
   * l - Length of the smallest desired RD (default 75)
+
+---------------------------------------------------------------------

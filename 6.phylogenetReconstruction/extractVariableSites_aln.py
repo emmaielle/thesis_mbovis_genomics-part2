@@ -5,6 +5,7 @@ Created on Wed Mar 23 10:33:15 2016
 
 @author: mlasserre
 """
+## This script was created in order to dismiss the heterozygous sites that are clearly erroneous when working with bacteria.
 
 from __future__ import division
 
@@ -13,7 +14,7 @@ __credits__ = ["MOIRA_LASSERRE"]
 __license__ = "MIT"
 __version__ = "1.0dev"
 __maintainer__ = "MOIRA_LASSERRE"
-__email__ = "mlasserre@pasteur.edu.uy"
+__email__ = "mlasserre [at] pasteur [dot] edu [dot] uy"
 __status__ = "Development"
 
 
@@ -47,15 +48,9 @@ def main():
     fastaInput = opts.input_dir
     fastaOut = opts.output_dir
     out = open(fastaOut, 'w')
-
-   
-
-
-    
     onlyVars = getVariable(fastaInput)    
     onlyVars[0]
     out.writelines(str(onlyVars))
-        
     out.close()
     
 

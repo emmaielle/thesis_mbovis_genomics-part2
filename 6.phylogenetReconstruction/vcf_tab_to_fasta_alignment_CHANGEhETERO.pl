@@ -9,6 +9,9 @@
 #	chr10	94056	T	./	./	./	./	./	C/C
 #	chr10	94180	G	./	A/A	./	./	./	./
 
+### modified from https://code.google.com/archive/p/vcf-tab-to-fasta/ to support haploid organisms
+
+
 use strict;
 use warnings;
 use Getopt::Long;
