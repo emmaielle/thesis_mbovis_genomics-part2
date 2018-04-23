@@ -73,12 +73,12 @@ Identify M. bovis strains at the sub lineage level
 Input should be either VCF of the SNP calling process (-vcf) or the result from SNP typing the SNP barcode described in README (-snp)
 
 optional arguments:
-  -h, --help  show this help message and exit
-  --vcf vcf   vcf of the strain
-  --snp snp   SNP typing results shown in diferent lines and tab separated, as follows:
+* -h, --help  show this help message and exit
+* --vcf vcf   vcf of the strain
+* --snp snp   SNP typing results shown in diferent lines and tab separated, as follows:
                #ID          FOUND
               POS-REF-ALT    1
               POS-REF-ALT    0
-  --s s       name of the studied strain
+* --s s       name of the studied strain
 
 Usage example: ```while read i; do python bovisCode.py --vcf $i --s $i; done < list```
