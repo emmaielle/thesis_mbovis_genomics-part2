@@ -77,7 +77,8 @@ optional arguments:
 * --vcf vcf   vcf of the strain
 * --snp snp   SNP typing results shown in diferent lines and tab separated, as follows:
 
-``` ID          FOUND
+``` 
+	ID          FOUND
     POS-REF-ALT    1
     POS-REF-ALT    0
 ```
