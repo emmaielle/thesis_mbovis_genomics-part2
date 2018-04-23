@@ -77,9 +77,10 @@ optional arguments:
 * --vcf vcf   vcf of the strain
 * --snp snp   SNP typing results shown in diferent lines and tab separated, as follows:
 
-> ID          FOUND
-  POS-REF-ALT    1
-  POS-REF-ALT    0
+``` ID          FOUND
+    POS-REF-ALT    1
+    POS-REF-ALT    0
+```
 * --s s       name of the studied strain
 
 Usage example: ```while read i; do python bovisCode.py --vcf $i --s $i; done < list```
